@@ -49,8 +49,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IRockPaperScissors.cs" />
-    <Compile Include="RockPaperScissors.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WinnerPaper.cs" />
+    <Compile Include="WinnerRock.cs" />
+    <Compile Include="WinnerScissors.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

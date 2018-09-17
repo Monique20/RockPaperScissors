@@ -17,11 +17,15 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Rock";
             var player2 = "Scissors";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Rock has won";
@@ -34,11 +38,15 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Scissors";
             var player2 = "Rock";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Rock has won";
@@ -51,11 +59,15 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Scissors";
             var player2 = "Paper";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Scissors has won";
@@ -68,11 +80,15 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Paper";
             var player2 = "Scissors";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Scissors has won";
@@ -85,11 +101,15 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Paper";
             var player2 = "Rock";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Paper has won";
@@ -97,16 +117,20 @@ namespace RockPaperScissorsKataTests
         }
 
         [Test]
-        public void Play_GivenPaperAndScissors_ShouldReturnPaper()
+        public void Play_GivenRockAndPaper_ShouldReturnPaper()
         {
             //Arrange
             var player1 = "Rock";
             var player2 = "Paper";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Paper has won";
@@ -119,11 +143,15 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Scissors";
             var player2 = "Scissors";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Draw";
@@ -136,11 +164,15 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Paper";
             var player2 = "Paper";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Draw";
@@ -153,11 +185,15 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Rock";
             var player2 = "Rock";
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
 
-            var sut = new RockPaperScissors();
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
 
             //Act
-            var actual = sut.Play(player1, player2);
+            var actual = rock.Play(player1, player2);
 
             //Assert
             var expected = "Draw";

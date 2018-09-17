@@ -9,5 +9,7 @@ namespace RockPaperScissorsKata
     public interface IRockPaperScissors
     {
         string Play(string player1, string player2);
+        void SetSucessor(IRockPaperScissors nextRockPaperScissors);
     }
+
 }
