@@ -217,5 +217,72 @@ namespace RockPaperScissorsKataTests
             var expected = "Draw";
             Assert.AreEqual(expected, actual);
         }
+
+        [Test]
+        public void Play_GivenEmpty_ShouldReturnMessage()
+        {
+            //Arrange
+            var player1 = "";
+            var player2 = "";
+            var nullOrWhitespace = new NullOrWhitespace();
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
+
+            nullOrWhitespace.SetSucessor(rock);
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
+
+            //Act
+            var actual = nullOrWhitespace.Play(player1, player2);
+
+            //Assert
+            var expected = "Invalid input";
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Play_GivenWhitespace_ShouldReturnMessage()
+        {
+            //Arrange
+            var player1 = " ";
+            var player2 = " ";
+            var nullOrWhitespace = new NullOrWhitespace();
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
+
+            nullOrWhitespace.SetSucessor(rock);
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
+
+            //Act
+            var actual = nullOrWhitespace.Play(player1, player2);
+
+            //Assert
+            var expected = "Invalid input";
+            Assert.AreEqual(expected, actual);
+        }
+
+        [Test]
+        public void Play_GivenNull_ShouldReturnMessage()
+        {
+            //Arrange
+            var nullOrWhitespace = new NullOrWhitespace();
+            var rock = new WinnerRock();
+            var paper = new WinnerPaper();
+            var scissor = new WinnerScissors();
+
+            nullOrWhitespace.SetSucessor(rock);
+            rock.SetSucessor(paper);
+            paper.SetSucessor(scissor);
+
+            //Act
+            var actual = nullOrWhitespace.Play(null, null);
+
+            //Assert
+            var expected = "Invalid input";
+            Assert.AreEqual(expected, actual);
+        }
     }
 }
