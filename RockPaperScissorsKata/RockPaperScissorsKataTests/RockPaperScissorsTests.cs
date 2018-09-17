@@ -17,15 +17,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Rock";
             var player2 = "Scissors";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Rock has won";
@@ -38,15 +40,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Scissors";
             var player2 = "Rock";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Rock has won";
@@ -59,15 +63,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Scissors";
             var player2 = "Paper";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Scissors has won";
@@ -80,15 +86,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Paper";
             var player2 = "Scissors";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Scissors has won";
@@ -101,15 +109,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Paper";
             var player2 = "Rock";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Paper has won";
@@ -122,15 +132,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Rock";
             var player2 = "Paper";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Paper has won";
@@ -143,15 +155,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Scissors";
             var player2 = "Scissors";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Draw";
@@ -164,15 +178,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Paper";
             var player2 = "Paper";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Draw";
@@ -185,15 +201,17 @@ namespace RockPaperScissorsKataTests
             //Arrange
             var player1 = "Rock";
             var player2 = "Rock";
+            var nullOrWhitespace = new NullOrWhitespace();
             var rock = new WinnerRock();
             var paper = new WinnerPaper();
             var scissor = new WinnerScissors();
 
+            nullOrWhitespace.SetSucessor(rock);
             rock.SetSucessor(paper);
             paper.SetSucessor(scissor);
 
             //Act
-            var actual = rock.Play(player1, player2);
+            var actual = nullOrWhitespace.Play(player1, player2);
 
             //Assert
             var expected = "Draw";
